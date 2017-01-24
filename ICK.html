@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICK</title>
+
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	background-color: darkgrey;
+}
+.container {
+	max-width:1024px;
+	margin:0 auto;
+
+}
+
+.but{
+
+	 border: none;
+	 background-color: #737373; 
+	 color: white; 
+	 text-align: center; 
+	 margin: 7px 0;
+	 padding: 5px; 
+	 float: left;
+	 text-decoration: none;
+	 font-size: 12px;
+}
+.list1{
+
+	float: right;
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+
+
+}
+
+.list1 a{
+	float: left;
+	margin: 0 auto;
+	color: #a6a6a6;
+	padding: 12px;
+	font-size: 13px;
+	text-decoration: none;
+	position:relative;
+
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	text-decoration: none;
+	color: #737373;
+	font-size:12px;
+	padding: 20px 15px;
+	display: block;
+	text-align: center;
+	border-left:1px solid rgba(0,0,0,.1);
+	border-right:1px solid rgba(0,0,0,.1);
+	border-bottom: 3px solid transparent;
+}
+nav li a:hover,nav li.active a {
+	border-bottom-color: #00cc00;
+}
+nav li a strong{
+display: block;
+padding: 5px 0;
+}
+.logo {
+	float: left;
+}
+.list1 a:after{
+	
+	content: "";
+	height: 10px;
+	width: 1px;
+	background: #fff;
+	display: inline-block;
+	margin-left: 10px;
+	position: absolute;
+	right: 0;
+	top:16px;
+
+
+}
+.list1 nav a:last-child:after {
+	display:none;
+	content:"";
+}
+.main-header {
+	background: #fff;	
+}
+.clearfix {
+ 	clear: both;
+	}
+.clearfix:after {
+	content:"";
+	height:0;
+	display: block;
+	clear: both;
+}
+.logo {
+	float: left;
+}
+nav.main{
+	float: right;
+}
+nav.top {
+	display: inline-block;
+    vertical-align: middle;
+    color: grey;
+}
+
+.left-section img {
+	max-width:100%;
+}
+.banner {
+	background:#8c8c8c;
+}
+.banner .container {
+	background: #ccc;
+}
+.left-section {
+	float: left;
+	width: 70%;
+	background:#fff;
+}
+.right-section {
+	float: right;
+	width: 30%;		
+	background: #ccc;	
+	box-sizing: border-box;
+}
+.right-section h2 {
+	background:#595959;
+	padding:15px 0;
+	margin: 0 auto	;
+	color: white;
+	font-size: 15px;
+}
+.right-section h2,.right-section >div article{
+	padding-left: 25px;
+	font-size: 12px;
+}
+.right-section >div article > strong {
+	float: left;
+	width:50px;
+	background:#fff;
+	padding: 4px 0;
+	text-align: center;
+	font-size: 12px;
+
+}
+.right-section >div article {
+	margin-bottom: 40px;
+	padding-top: 40px;
+	border-top:1px solid rgba(90,90,90,.7);
+}
+.right-section >div p {
+	padding: 3px 10px;
+	padding-left: 60px;
+	margin: 0;
+}
+.right-section >div p strong {
+	display: block;
+	margin-bottom: 10px;
+}
+.feature {
+	float: left;
+	width: 31.33%;
+	margin-right: 3%;
+
+}
+.features-section {
+	background: #f1f1f1;
+	padding: 20px 0;
+}
+.events {
+	background:#ccc;
+	padding:15px 0;
+}
+.features-section .feature:last-child {
+	margin-right: 0;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+.feature  h2 {
+	margin: 0;
+	background:#fff;
+	position: relative;
+}
+.feature h2 span {
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+	width: 80%;
+
+
+}
+
+.feature span {
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+    
+}
+.feature h2 p {
+	display: none;
+	background: #00cc00;
+	width: 40%;
+	padding: 20px;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	font-weight: normal;
+	min-height: 200%;
+	font-size: 12px;
+
+}
+
+.feature i {
+	background: #00cc00;
+	text-align: center;
+	padding: 0 ;
+	width: 30%;
+
+}
+.feature h2:hover p {
+	display: block;
+}
+
+select {
+border: 1px solid grey;
+background-color: #595959;
+color: #a6a6a6;
+padding: 3px;
+}
+
+.div2{
+	background-color: #262626; 
+	margin: 0; 
+	padding: 0; 
+	height: 170px; 
+	width: 100%;
+	
+}
+</style>
+</head>
+<body>
+<div style="background-color:  #595959;">
+
+  
+  <div CLass="container clearfix">
+  	<a href="#LOGIN" class="but">LOGIN</a>
+  	<div class="list1">
+  	<nav class="top">
+  		<a href="#About">About</a>
+  		<a href="#Publication">Publication</a>
+  		<a href="#Blog">Blog</a>
+  		<a href="#Contact">Contact</a>
+  		</nav>
+  		<select class="select">
+  			<option value="EN">EN</option>
+  			<option value="HN">HN</option>
+  			<option value="GM">GM</option>
+  			<option value="CH">CH</option>
+  			<option value="EN(US)">EN(US)</option>
+  		</select>
+  	</div>
+  	</div>
+  
+
+
+  <div class="main-header">
+  <div class="container clearfix">
+  	<div class="logo" ><a href="#home"><img src="img/logomain_20170122_175155.jpg"></a></div>
+  	<nav class="main">
+  		<ul class="clearfix">
+			<li class="active"><a href="#">Front page<strong>Home</strong></a></li>
+			<li><a href="#">Apply your idea<strong>Incubator</strong></a></li>
+			<li><a href="#">Ours partners<strong>Companies</strong></a></li>
+			<li><a href="#">Our courses<strong>Training</strong></a></li>
+			<li><a href="#">Our events<strong>Events</strong></a></li>
+			<li><a href="#">Latest news<strong>News</strong></a></li>
+  		</ul>
+  	</nav>
+  	</div>
+  </div> <!-- main header -->
+
+  <div class="content">
+  	<div class="banner">
+  	<div class="container clearfix">
+  	<div class="left-section">
+ 		<img src="img/img1_20170122_175240.jpg">
+  	</div>
+  		<div class="right-section">
+  			<h2>
+  			<div style="width: 50px; height: 50px; text-align: center; padding: 0; margin: 0; float: left;">
+  				<i><img src="img/recentlogo_20170122_175210.jpg"></i>
+  				</div>
+  				<span> RECENT NEWS</span>
+  			</h2>
+  			<div>
+  			<article>
+  				<div style="width: 50px; height: 50px; background-color: white; text-align: center; padding: 0; margin: 0; float: left;">
+  					<h4>21 nov</h4>
+  				</div>
+  				<p>
+						<strong>ICK wisher you happy march </strong>
+  					A derived class can access all the non-private members of its base class. 
+  				</p>
+  			</article>
+  			<article>
+  				<div style="width: 50px; height: 50px; background-color: white; text-align: center; padding: 0; margin: 0; float: left;">
+  					<h4>21 nov</h4>
+  				</div>
+  				<p>
+  				<strong>Ends the training</strong>
+  					When deriving a class from a base class, the base class may be inherited through public, protected or private inheritance.
+  				</p>
+  			</article>
+  			</div>
+  		</div>
+  		</div>
+  	</div><!--banner -->
+
+  	<div class="features-section">
+  	<div class="container clearfix">
+  		<div class="feature">
+  			<h2>
+  			<div style="width: 50px; height: 50px; background-color: white; text-align: center; padding: 0; margin: 0; float: left;">
+  			<i><img src="img/leef.png"></i>
+  			</div>
+  			<span style="height: 45px;">Incubator</span>
+  			<P>We hardly use protected or private inheritance, but public inheritance is commonly used. While using different type of inheritance.</P>
+  			</h2>  			
+  			<img src="img/incubator.png" style="width: 100%">
+  		</div>
+  		<div class="feature">
+  			<h2>
+  			<div style="width: 50px; height: 50px; background-color: white; text-align: center; padding: 0; margin: 0; float: left;">
+  					<i><img src="img/training1.png"></i>
+  				</div>
+  			<span style="height: 45px;">Training</span>
+  			<P>When deriving a class from a public base class, public members of the base class.</P>
+  			</h2>  			
+  			<img src="img/training2.png" style="width: 100%">
+  		</div>
+  		<div class="feature">
+  			<h2>
+  			<div style="width: 50px; height: 50px; background-color: white; text-align: center; padding: 0; margin: 0; float: left;">
+  			<i><img src="img/register.png"></i>
+  			</div>
+  			<span style="height: 45px;">Register your business</span>
+  			<P>When deriving from a protected base class, public and protected members of the base class.</P>
+  			</h2>  			
+  			<img src="img/register1.png" style="width: 100%">
+  		</div>
+  	</div>
+  	</div><!--features -->
+  	<div class="events">
+  		<div class="container clearfix">
+  			<div class="feature">
+  				<h2>
+  				<div style="width: 50px; height: 50px; background-color: white; text-align: center; padding: 0; margin: 0; float: left;">
+  			<i><img src="img/events.png"></i>
+  			</div>
+  			<span style="height: 45px;">Events</span>
+  			</h2>  
+  			<div style="background-color: white;width: 100%; border-top: 1px solid #d9d9d9; margin: 1px auto; height: 130px;"><p style="margin: 10px; ">When deriving from a private base class, public and protected members</p>
+  			</div>
+  			</div>
+  			<div class="feature">
+  				<div class="div2">
+
+    <div style="background-color: white;height:60px;width:45px;float: left;margin-left: 20px;margin-top: 20px;">
+    <p align="Center" style="margin:2px;font-family: Calibri;font-size: 17px;padding: 5px;">01 Mar</p>
+
+    </div>
+     
+     <label style="color:rgb(194,196,195) ;font-family:calibri;float:left;margin-left:10px;margin-top: 40px;">Upcoming Event</label>
+     <br>
+     <label style="color:rgb(194,196,195) ;font-family:calibri;float:left;margin-left:10px;margin-top:6px;">Grant Award Ceremony</label>
+  				</div>
+  			</div>
+  			<div style="float: left; width: 31%;">
+  				<div class="div2">
+  					<div style="background-color: white;height:60px;width:45px;float: left;margin-left: 20px;margin-top: 20px;">
+    <p align="Center" style="margin:2px;font-family: Calibri;font-size: 17px;padding: 5px;">05 Mar</p>
+
+    </div>
+     
+     <label style="color:rgb(194,196,195) ;font-family:calibri;float:left;margin-left:10px;margin-top: 40px;">Upcoming Event</label>
+     <br>
+     <label style="color:rgb(194,196,195) ;font-family:calibri;float:left;margin-left:10px;margin-top:6px;">Business Tuesday #6</label>
+  				</div>
+  			</div>	
+  		</div>
+  	</div>
+
+
+  </div>
+</div>
+
+</body>
+</html>
